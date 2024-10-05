@@ -4,9 +4,9 @@ const Contact = () => {
     <section className="flex flex-col items-center gap-4 pr-0 pl-0 pb-[10vh] pt-[10vh] bg-gray-900 text-center" id="contact">
       <h1 className="text-4xl md:pb-20 lg:pb-24 md:text-5xl font-bold text-white">Get in Touch</h1>
       <p className="w-full md:w-[700px] text-[18px] text-[#c2bad2] px-4">
-        I'm eager to join a collaborative team where I can contribute my skills and learn from others.
+        {`I'm eager to join a collaborative team where I can contribute my skills and learn from others.
         If you have an exciting project, let's discuss how I can be a valuable asset.
-        I'm actively seeking a new opportunity to apply my skills and continue growing!
+        I'm actively seeking a new opportunity to apply my skills and continue growing!`}
       </p>
       <div className="flex gap-4">
         <a href="https://github.com/17coincooker" target="_blank">

@@ -1,10 +1,11 @@
 'use client';
 import { Progress, Typography } from "@material-tailwind/react";
+import { colors } from "@material-tailwind/react/types/generic";
 import { useEffect, useState } from "react";
 
 const SkillProgress = ({ name, ability }: { name: string; ability: string }) => {
   const [value, setValue] = useState(0);
-  const [color, setColor] = useState<any>(undefined);
+  const [color, setColor] = useState<colors>();
   const targetValue = parseInt(ability); // Parse ability once
 
   useEffect(() => {
@@ -34,7 +35,6 @@ const SkillProgress = ({ name, ability }: { name: string; ability: string }) => 
 
     const animateProgress = () => {
       let currentValue = 0; // Start from 0
-      const increment = targetValue / 100; // Increment value
       const duration = 1000; // Total duration of the animation in milliseconds
       const startTime = performance.now(); // Get the current timestamp
 
@@ -74,8 +74,8 @@ const SkillProgress = ({ name, ability }: { name: string; ability: string }) => 
         </Typography>
       </div>
       <Progress
-              color={color ? color : "light-blue"}
-              value={value} placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}      />
+              color={color}
+              value={value} placeholder={undefined} onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined}/>
     </div>
   );
 };

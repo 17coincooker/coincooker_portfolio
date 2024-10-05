@@ -1,8 +1,6 @@
 
-import { Button, Typography } from "@material-tailwind/react";
-import { useContext } from "react";
 import { motion } from "framer-motion";
-const ProjectCard = ({ title, description, image, link }: { title: string, description: string, image: string; link: string }) => {
+const ProjectCard = ({ image, link }: { title: string, description: string, image: string; link: string }) => {
   return (
     <div className="relative h-full w-full">
       <img
