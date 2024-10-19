@@ -6,6 +6,12 @@ export const projects = [
         link: "https://www.figma.com/design/9s4vhNZjg9GIQguV2lWezo/Bet-Game"
     },
     {
+        title: "Bet-Game Figma design",
+        description: "This is my Figma design",
+        image: "/projectsImg/india_weather.png",
+        link: "https://india-weather-frontend.vercel.app/"
+    },
+    {
         title: "PriaShop",
         description: "Introducing a cutting-edge e-commerce platform built with Next.js, designed to support multiple stores effortlessly.",
         image: "/projectsImg/priashop1.png",
